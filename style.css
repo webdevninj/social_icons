@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+:root {
+    --instagram-bg-color:
+        red
+    ;
+    --twitterx-bg-color: #000;
+    --youtube-bg-color: #f00;
+    --facebook-bg-color: #0866ff;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+}
+
+.social-icons-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-button {
+    border: 1.5px solid;
+    border-radius: 50%;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.social-icon {
+    display: block;
+    width: 40px;
+    border-radius: 50%;
+    margin: 2px;
+    padding: 6px;
+    transition: .4s;
+}
+
+.social-button:hover {
+    scale: 1.2;
+
+
+
+    & .social-icon.twitterx {
+        background: var(--twitterx-bg-color);
+    }
+
+    & .social-icon.youtube {
+        background: var(--youtube-bg-color);
+    }
+
+    & .social-icon.facebook {
+        background: var(--facebook-bg-color)
+    }
+
+    & .social-icon.instagram {
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    }
+
+}
